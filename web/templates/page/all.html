@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+{% include '/page/header.html' ignore missing %}
+<body  class="nav-md" >
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col" >
+            {% include '/page/left.html' ignore missing %}
+        </div>
+        <div class="top_nav">
+
+            <div class="nav_menu" >
+                <nav role="navigation" class="">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a aria-expanded="false" data-toggle="dropdown" class="user-profile dropdown-toggle" href="javascript:;">
+                                <img alt="" src="{{ url_for('static', filename='gentelella/images/imgJd.png') }}">
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                <li>
+                                    <a href="/">帮助</a>
+                                </li>
+                                <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i>退出</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+       <h1>内容页面</h1>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
